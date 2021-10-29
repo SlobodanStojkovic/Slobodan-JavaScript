@@ -99,3 +99,53 @@ console.log(removedItems)
 /* Copy an Array */
 let shallowCopy = fruits.slice() // this is how to make a copy
 // ["Strawberry", "Mango"]
+
+
+
+
+const fruits = []
+fruits.push('banana', 'apple', 'peach')
+
+console.log(fruits.length) // 3
+
+
+/* When setting a property on a JavaScript array when the property is a valid array index and that index is outside the current bounds of the array, the engine will update the array's length property accordingly: */
+fruits[5] = 'mango'
+console.log(fruits[5])            // 'mango'
+console.log(Object.keys(fruits))  // ['0', '1', '2', '5']
+console.log(fruits.length)        // 6
+
+/* Increasing the length. */
+fruits.length = 10
+console.log(fruits)              // ['banana', 'apple', 'peach', empty x 2, 'mango', empty x 4]
+console.log(Object.keys(fruits)) // ['0', '1', '2', '5']
+console.log(fruits.length)       // 10
+console.log(fruits[8])           // undefined
+
+
+/* Decreasing the length property does, however, delete elements. */
+fruits.length = 2
+console.log(Object.keys(fruits)) // ['0', '1']
+console.log(fruits.length)       // 2
+
+
+
+
+/* The map() method creates a new array populated with the results of calling a provided function on every element in the calling array.*/
+const array1 = [1, 4, 9, 16];
+
+// pass a function to map
+const map1 = array1.map(x => x * 2);
+
+console.log(map1);
+// expected output: Array [2, 8, 18, 32]
+
+/* You shouldn't be using map if:
+you're not using the array it returns; and/or
+you're not returning a value from the callback. */
+
+
+/* More about Arrays at: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array */
+
+
+
