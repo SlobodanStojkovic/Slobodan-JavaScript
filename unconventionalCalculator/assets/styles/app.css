@@ -1,0 +1,47 @@
+body {
+  background-color: springgreen;
+}
+
+header {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 2rem;
+  text-align: center;
+  font-size: 2rem;
+  margin: 5rem;
+  background-color: skyblue;
+}
+
+#calculator {
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 5rem;
+  background-color: skyblue;
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+
+#result-section {
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  border-top: 0;
+  margin: 5rem;
+  margin-top: 0;
+  background-color: skyblue;
+}
+
+#input-number {
+  padding: 0.5rem;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+}
+
+button {
+  padding: 1rem;
+  background-color: springgreen;
+  border-radius: 5px;
+}
